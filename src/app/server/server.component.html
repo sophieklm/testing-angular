@@ -1,3 +1,7 @@
+<p *ngIf="getServerSuccess(); else serverWarning" class="app-success-alert">Success</p>
+<ng-template #serverWarning>
+	<app-warning-alert></app-warning-alert>
+</ng-template>
 <p 
 	[ngStyle]="{backgroundColor: getColour()}"
 	[ngClass]="{online: serverStatus === 'online'}"

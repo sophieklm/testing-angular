@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-success-alert',
+  selector: '.app-success-alert',
   template: '<p class="text-success"> Success! </p>',
   styles: [
     `
