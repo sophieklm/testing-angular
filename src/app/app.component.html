@@ -21,7 +21,7 @@
           (click)="onToggleDetails()">Toggle Details
         </button>
         <p *ngIf="showDetails">Super Secret</p>
-        <div *ngFor="let logItem of log">{{ logItem }}</div>
+        <div *ngFor="let logItem of log; let i = index">{{ logItem }}</div>
 
         <hr>
       <app-servers></app-servers>
