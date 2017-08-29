@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Welcome to My App!';
+  userName = '';
+  showDetails = false;
+  log = [];
+
+  onToggleDetails() {
+  	this.showDetails = !this.showDetails;
+  	this.log.push(this.log.length + 1);
+  }
+
+
 }

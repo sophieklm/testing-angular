@@ -16,6 +16,14 @@
           [disabled]="!userName"
           (click)="userName = ''">Reset User</button>
         <hr>
+        <button 
+          class="btn btn-primary" 
+          (click)="onToggleDetails()">Toggle Details
+        </button>
+        <p *ngIf="showDetails">Super Secret</p>
+        <div *ngFor="let logItem of log">{{ logItem }}</div>
+
+        <hr>
       <app-servers></app-servers>
       <app-warning-alert></app-warning-alert>
       <app-success-alert></app-success-alert>
